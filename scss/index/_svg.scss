@@ -1,0 +1,26 @@
+.svg__container {
+    display: flex;
+    gap: 30px;
+    
+    .elipse {
+        fill: red;
+        stroke: black;
+        stroke-width: 3px;
+    }
+    .circle {
+        fill: blue;
+        stroke:brown;
+        stroke-width: 3px;
+    }
+    .square {
+        fill: gold;
+        stroke: darkgreen;
+        stroke-width: 3px;
+    }
+
+    .rectangle {
+        fill: #23db0f;
+        stroke: darkblue;
+        stroke-width: 3px;
+    }
+}
