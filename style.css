@@ -1,0 +1,9 @@
+@font-face{
+    font-family: boldFont;
+    src: url(font/Montserrat-Bold.woff2);
+}
+
+@font-face{
+    font-family: boldRegular;
+    src: url(font/Montserrat-Regular.woff2);
+}

@@ -1,52 +1,169 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <title>Tailwind site</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="header center">
-        <a href="#" class="logo">
-            <img src="img/logo.png" alt="Валентин" width="200">
-        </a>
-        <nav class="nav">
-            <ul class="nav__list">
-                <li class="nav__item"><a href="#" class="nav__link">Головна</a></li>
-                <li class="nav__item"><a href="#" class="nav__link">Заходи</a></li>
-                <li class="nav__item"><a href="#" class="nav__link">Контакти</a></li>
-                <li class="nav__item"><a href="#" class="nav__link">Блоґ</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <main>
-        <section>
-            <g class="svg__container">
-                <svg class="elipse" width="350" height="350" viewBox="0 0 216 191" xmlns="http://www.w3.org/2000/svg">
-                    <ellipse cx="108" cy="95.5" rx="108" ry="95.5"/>
-                </svg>
+    <main class="offer">
+        <div class="mx-auto px-4 py-6 bg-[url('/img/vlandian.webp')] bg-cover bg-fixed">
+            <div class="flex justify-between items-center">
+                <h1 class="font-[boldFont] text-3xl font-bold text-white px-6">Tailwind site </h1>
+                <nav class="flex gap-6 px-6">
+                    <a href="#"
+                        class="font-[boldRegular] text-lg font-medium text-white hover:text-emerald-500 ease-in duration-300">Map</a>
+                    <a href="#"
+                        class="font-[boldRegular] text-lg font-medium text-white hover:text-emerald-500 ease-in duration-300">Contact</a>
+                    <a href="#"
+                        class="font-[boldRegular] text-lg font-medium text-white hover:text-emerald-500 ease-in duration-300">About me</a>
+                    <a href="#"
+                        class="font-[boldRegular] text-lg font-medium text-white hover:text-emerald-500 ease-in duration-300">Support</a>
+                </nav>
+            </div>
+            <div class="flex flex-col justify-center items-center py-[375px]">
+                <h1 class="font-[boldFont] text-3xl font-bold py-4 text-white">You need to press that button</h1>
+                <div class="button py-6">
+                    <a class="container bg-white text-black py-4 px-6 rounded-xl font-[boldRegular] hover:bg-emerald-500 ease-in duration-300"
+                        href="#" target="_blank">Click me!</a>
+                </div>
+            </div>
+        </div>
+        <div class="container flex justify-center mx-auto py-4">
+            <div class="font-[boldRegular] flex flex-col justify-center py-8">
+                <div class="py-12 flex flex-row justify-between gap-4">
+                    <div
+                        class="py-12 px-8 border-4 border-black rounded-2xl hover:bg-emerald-400 hover:font-bold ease-in duration-300">
+                        <img src="/img/konvoy.webp" alt="konvoir-uni">
+                        <p class="flex justify-center py-6 text-xl">Uniform of Serdiuk convoy</p>
+                    </div>
+                    <div
+                        class="py-12 px-8 border-4 border-black rounded-2xl hover:bg-emerald-400 hover:font-bold ease-in duration-300">
+                        <img src="/img/osavul.webp" alt="osavul-uni">
+                        <p class="flex justify-center py-6 text-xl">Serdiuk uniform of Osavul</p>
+                    </div>
+                    <div
+                        class="py-12 px-8 border-4 border-black rounded-2xl hover:bg-emerald-400 hover:font-bold ease-in duration-300">
+                        <img src="/img/litnya.webp" alt="lito-uni">
+                        <p class="flex justify-center py-6 text-xl">Summer uniform of Serdiuk</p>
+                    </div>
+                    <div
+                        class="py-14 px-8 border-4 border-black rounded-2xl hover:bg-emerald-400 hover:font-bold ease-in duration-300">
+                        <img class="hover:" src="/img/zymnia.webp" alt="zyma-uni" width="650px">
+                        <p class="flex justify-center py-6 text-xl">Winter uniform of Serdiuk</p>
+                    </div>
+                </div>
+                <h2 class="font-[boldFont] text-3xl flex justify-center">Serdiuk Uniforms</h2>
                 
-                <svg class="rectangle" width="350" height="350" viewBox="0 0 262 110"  xmlns="http://www.w3.org/2000/svg">
-                    <rect width="350" height="350" />
-                </svg>
-
-                <svg class="circle" width="350" height="350" viewBox="0 0 255 108"  xmlns="http://www.w3.org/2000/svg">
-                    <path d="M255 54C255 83.8234 197.916 108 127.5 108C57.0837 108 0 83.8234 0 54C0 24.1766 57.0837 0 127.5 0C197.916 0 255 24.1766 255 54Z" />
-                </svg>
-                
-                <svg class="square" width="350" height="350" viewBox="0 0 188 178"  xmlns="http://www.w3.org/2000/svg">
-                    <rect class="animated-rect" width="188" height="178" />
-                </svg>
-            </g>
-        </section>
+            </div>
+        </div>
+        <div class="container mb-12 mx-auto py-[1px] w-full h-1 flex bg-black"></div>
+        <div class="container flex mx-auto">
+            <div class="font-[boldRegular]">
+                <img class="float-right mx-4" src="img/Cavalier.webp" alt="cavalier" width="700">
+                <p class="float-"><span class="text-2xl font-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit.</span><br>
+                    Laboriosam quasi magnam corrupti cumque aliquid, vitae non. Nulla, accusantium repudiandae! Fugiat, nemo mollitia modi
+                    consectetur ex at quibusdam ea a totam maxime in nisi blanditiis? Ipsum iste veritatis ut, quo,
+                    accusantium dolor eos dicta laboriosam aliquam nihil est earum inventore quas autem nesciunt
+                    blanditiis rerum hic at facere ex possimus beatae aliquid, ea officia? Facilis at dolores itaque
+                    recusandae minima earum porro nostrum? Numquam vero dicta expedita, assumenda amet facere libero
+                    dignissimos? Nobis excepturi praesentium iste quas voluptas ratione blanditiis, consectetur
+                    cupiditate ipsa, accusamus et? Eaque atque tempora fuga voluptate ducimus dolorum sit modi
+                    consequatur praesentium, aspernatur adipisci dolorem ut molestiae et fugiat veritatis beatae ratione
+                    ex officiis corrupti, harum dolor eligendi quaerat omnis. <br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam quasi magnam
+                    corrupti cumque aliquid, vitae non. Nulla, accusantium repudiandae! Fugiat, nemo mollitia modi
+                    consectetur ex at quibusdam ea a totam maxime in nisi blanditiis? Ipsum iste veritatis ut, quo,
+                    accusantium dolor eos dicta laboriosam aliquam nihil est earum inventore quas autem nesciunt
+                    blanditiis rerum hic at facere ex possimus beatae aliquid, ea officia? Facilis at dolores itaque
+                    recusandae minima earum porro nostrum? Numquam vero dicta expedita, assumenda amet facere libero
+                    dignissimos? Nobis excepturi praesentium iste quas voluptas ratione blanditiis, consectetur
+                    cupiditate ipsa, accusamus et? Eaque atque tempora fuga voluptate ducimus dolorum sit modi
+                    consequatur praesentium, aspernatur adipisci dolorem ut molestiae et fugiat veritatis beatae ratione
+                    ex officiis corrupti, harum dolor eligendi quaerat omnis.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam quasi magnam
+                    corrupti cumque aliquid, vitae non. Nulla, accusantium repudiandae! Fugiat, nemo mollitia modi
+                    consectetur ex at quibusdam ea a totam maxime in nisi blanditiis? Ipsum iste veritatis ut, quo,
+                    accusantium dolor eos dicta laboriosam aliquam nihil est earum inventore quas autem nesciunt
+                    blanditiis rerum hic at facere ex possimus beatae aliquid, ea officia? Facilis at dolores itaque
+                    recusandae minima earum porro nostrum? Numquam vero dicta expedita, assumenda amet facere libero
+                    dignissimos? Nobis excepturi praesentium iste quas voluptas ratione blanditiis, consectetur
+                    cupiditate ipsa, accusamus et? Eaque atque tempora fuga voluptate ducimus dolorum sit modi
+                    consequatur praesentium, aspernatur adipisci dolorem ut molestiae et fugiat veritatis beatae ratione
+                    ex officiis corrupti, harum dolor eligendi quaerat omnis.<br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam quasi magnam
+                    corrupti cumque aliquid, vitae non. Nulla, accusantium repudiandae! Fugiat, nemo mollitia modi
+                    consectetur ex at quibusdam ea a totam maxime in nisi blanditiis? Ipsum iste veritatis ut, quo,
+                    accusantium dolor eos dicta laboriosam aliquam nihil est earum inventore quas autem nesciunt
+                    blanditiis rerum hic at facere ex possimus beatae aliquid, ea officia? Facilis at dolores itaque
+                    recusandae minima earum porro nostrum? Numquam vero dicta expedita, assumenda amet facere libero
+                    dignissimos? Nobis excepturi praesentium iste quas voluptas ratione blanditiis, consectetur
+                    cupiditate ipsa, accusamus et? Eaque atque tempora fuga voluptate ducimus dolorum sit modi
+                    consequatur praesentium, aspernatur adipisci dolorem ut molestiae et fugiat veritatis beatae ratione
+                    ex officiis corrupti, harum dolor eligendi quaerat omnis.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+        </div>
+        <div class="container flex mx-auto py-8">
+            <div class="font-[boldRegular] gap-4">
+                <img class="float-left mx-4" src="img/pic.webp" alt="cavalier" width="700">
+                <p class="pl-12"><span class="text-2xl font-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit.</span><br>
+                    Laboriosam quasi magnam corrupti cumque aliquid, vitae non. Nulla, accusantium repudiandae! Fugiat, nemo mollitia modi
+                    consectetur ex at quibusdam ea a totam maxime in nisi blanditiis? Ipsum iste veritatis ut, quo,
+                    accusantium dolor eos dicta laboriosam aliquam nihil est earum inventore quas autem nesciunt
+                    blanditiis rerum hic at facere ex possimus beatae aliquid, ea officia? Facilis at dolores itaque
+                    recusandae minima earum porro nostrum? Numquam vero dicta expedita, assumenda amet facere libero
+                    dignissimos? Nobis excepturi praesentium iste quas voluptas ratione blanditiis, consectetur
+                    cupiditate ipsa, accusamus et? Eaque atque tempora fuga voluptate ducimus dolorum sit modi
+                    consequatur praesentium, aspernatur adipisci dolorem ut molestiae et fugiat veritatis beatae ratione
+                    ex officiis corrupti, harum dolor eligendi quaerat omnis.<br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam quasi magnam
+                    corrupti cumque aliquid, vitae non. Nulla, accusantium repudiandae! Fugiat, nemo mollitia modi
+                    consectetur ex at quibusdam ea a totam maxime in nisi blanditiis? Ipsum iste veritatis ut, quo,
+                    accusantium dolor eos dicta laboriosam aliquam nihil est earum inventore quas autem nesciunt
+                    blanditiis rerum hic at facere ex possimus beatae aliquid, ea officia? Facilis at dolores itaque
+                    recusandae minima earum porro nostrum? Numquam vero dicta expedita, assumenda amet facere libero
+                    dignissimos? Nobis excepturi praesentium iste quas voluptas ratione blanditiis, consectetur
+                    cupiditate ipsa, accusamus et? Eaque atque tempora fuga voluptate ducimus dolorum sit modi
+                    consequatur praesentium, aspernatur adipisci dolorem ut molestiae et fugiat veritatis beatae ratione
+                    ex officiis corrupti, harum dolor eligendi quaerat omnis.<br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam quasi magnam
+                    corrupti cumque aliquid, vitae non. Nulla, accusantium repudiandae! Fugiat, nemo mollitia modi
+                    consectetur ex at quibusdam ea a totam maxime in nisi blanditiis? Ipsum iste veritatis ut, quo,
+                    accusantium dolor eos dicta laboriosam aliquam nihil est earum inventore quas autem nesciunt
+                    blanditiis rerum hic at facere ex possimus beatae aliquid, ea officia? Facilis at dolores itaque
+                    recusandae minima earum porro nostrum? Numquam vero dicta expedita, assumenda amet facere libero
+                    dignissimos? Nobis excepturi praesentium iste quas voluptas ratione blanditiis, consectetur
+                    cupiditate ipsa, accusamus et? Eaque atque tempora fuga voluptate ducimus dolorum sit modi
+                    consequatur praesentium, aspernatur adipisci dolorem ut molestiae et fugiat veritatis beatae ratione
+                    ex officiis corrupti, harum dolor eligendi quaerat omnis.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam quasi magnam
+                    corrupti cumque aliquid, vitae non. Nulla, accusantium repudiandae! Fugiat, nemo mollitia modi
+                    consectetur ex at quibusdam ea a totam maxime in nisi blanditiis? Ipsum iste veritatis ut, quo,
+                    accusantium dolor eos dicta laboriosam aliquam nihil est earum inventore quas autem nesciunt
+                    blanditiis rerum hic at facere ex possimus beatae aliquid, ea officia? Facilis at dolores itaque
+                    recusandae minima earum porro nostrum? Numquam vero dicta expedita, assumenda amet facere libero
+                    dignissimos? Nobis excepturi praesentium iste quas voluptas ratione blanditiis, consectetur
+                    cupiditate ipsa, accusamus et? Eaque atque tempora fuga voluptate ducimus dolorum sit modi
+                    consequatur praesentium, aspernatur adipisci dolorem ut molestiae et fugiat veritatis beatae ratione
+                    ex officiis corrupti, harum dolor eligendi quaerat omnis.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam quasi magnam
+                    corrupti cumque aliquid, vitae non. Nulla, accusantium repudiandae! Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                    Eos asperiores fuga unde ut dignissimos voluptatem inventore consequatur mollitia qui laboriosam.</p>
+            </div>
+        </div>
     </main>
-
-    <section class="offer center"></section>
-    <footer class="footer center"></footer>
+    <div class="container mx-auto py-[1px] w-full h-1 flex bg-black"></div>
+    <footer class="footer">
+        <div class="block mx-auto px-2 py-10 bg-white-500">
+            <div class="flex gap-8 justify-center items-center">
+                <a class="font-[boldRegular] text-base" href="#" target="_blank">Telegram</a>
+                <p class="font-[boldRegular] text-base"> &#169; Artem</p>
+                <a class="font-[boldRegular] text-base" href="https://github.com/hayndehayn" target="_blank" >Github</a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
