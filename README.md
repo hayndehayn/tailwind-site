@@ -1,0 +1,1 @@
+<!-- TODO: Make fully cooly 4-5 page site using tailwind + ts -->
